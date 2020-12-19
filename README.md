@@ -10,7 +10,7 @@
 mvn clean install
 ```
 
-## Steps to start server
+## Steps to start server (default port: 8080)
 ```
 ./mvnw spring-boot:run
 ```
