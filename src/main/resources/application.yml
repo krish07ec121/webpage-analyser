@@ -1,0 +1,7 @@
+
+webpage:
+  anlyser:
+    website:
+      url: https://www.314e.com/
+    record:
+      limit: 10
