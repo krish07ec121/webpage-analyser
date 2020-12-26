@@ -10,7 +10,7 @@
 mvn clean install
 ```
 
-## Steps to start server (default port: 8080)
+## Steps to start server (default port: 8081)
 ```
 ./mvnw spring-boot:run
 ```
@@ -18,7 +18,7 @@ mvn clean install
 ## Steps to Test Application
 Call below endpoint from Postman or browser
 ```
-GET http://localhost:8080//webpage-analyser/report
+GET http://localhost:8081/webpage-analyser/report
 ```
 This will return below response(it will take up to 40 seconds to process all hyperlinks up to 4 level). The response contains words respective frequency.
 ```json

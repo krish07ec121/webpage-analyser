@@ -49,7 +49,7 @@ public class WebpageScanner {
 
     /*
     *  Recursive function to fetch documents from hyperlinks up to level 4.
-    *  It will prepare Consolidated Html document list from which we will to extract words.
+    *  It will prepare consolidated Html document list from which we will to extract words.
     * */
     private void prepareConsolidatedHyperLinkDocuments(List<Document> consolidatedHyperLinkDocuments, Document rootPageDocument, Set<String> visitedLinks) {
         currentLevel++;

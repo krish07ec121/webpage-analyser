@@ -17,6 +17,9 @@
     <properties>
         <java.version>1.8</java.version>
         <jsoup.version>1.13.1</jsoup.version>
+        <spring-boot-test.version>2.2.6.RELEASE</spring-boot-test.version>
+        <junit-test.version>4.12</junit-test.version>
+        <mockito-verion>1.10.19</mockito-verion>
     </properties>
 
     <dependencies>
@@ -36,11 +39,28 @@
             <version>${jsoup.version}</version>
         </dependency>
 
+        <!-- Test Dependency -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <version>${spring-boot-test.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-test.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito-verion}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -52,4 +72,10 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>java-net-repo</id>
+            <url>https://maven.java.net/content/repositories/public/</url>
+        </repository>
+    </repositories>
 </project>

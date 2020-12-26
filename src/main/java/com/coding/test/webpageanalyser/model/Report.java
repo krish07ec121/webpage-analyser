@@ -27,4 +27,12 @@ public class Report {
     public void setFrequentWordPairs(Map<String, Integer> frequentWordPairs) {
         this.frequentWordPairs = frequentWordPairs;
     }
+
+    @Override
+    public String toString() {
+        return "Report{" +
+                "frequentWords=" + frequentWords.toString() +
+                ", frequentWordPairs=" + frequentWordPairs.toString() +
+                '}';
+    }
 }

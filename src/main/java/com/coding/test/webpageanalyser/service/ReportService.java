@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
-public class AppService {
+public class ReportService {
     private static final String WHITESPACE = " ";
 
     @Value("${webpage.anlyser.record.limit:10}")
